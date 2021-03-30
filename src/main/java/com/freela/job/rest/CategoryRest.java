@@ -4,7 +4,6 @@ import com.freela.job.dto.in.CategoryIn;
 import com.freela.job.dto.out.CategoryOut;
 import com.freela.job.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -50,8 +49,4 @@ public class CategoryRest {
                 .collect(Collectors.toList());
     }
 
-    @DeleteMapping("/delete/{id}")
-    public void deleteById(@PathVariable String id) {
-        categoryRepository.deleteById(id);
-    }
 }
