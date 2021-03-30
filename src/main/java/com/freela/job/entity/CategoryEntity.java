@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import java.util.Random;
 import java.util.UUID;
 
-@Entity(name = "category")
+@Entity(name = "categories")
 @Data
 @Builder(toBuilder = true)
 @Setter(AccessLevel.PRIVATE)
