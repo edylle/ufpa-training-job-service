@@ -1,6 +1,7 @@
 package com.freela.job.dto.in;
 
 import com.freela.job.entity.JobEntity;
+import com.freela.job.validator.BudgetConstraint;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -8,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.UUID;
 
+@BudgetConstraint
 public class JobIn {
 
     @NotBlank(message = "Missing required field: name")
@@ -38,8 +40,8 @@ public class JobIn {
 
     public JobEntity toEntity(String categoryId, String jobId) {
         return JobEntity.create(
-                categoryId,
                 jobId,
+                categoryId,
                 name,
                 description,
                 budgetMin,
