@@ -7,6 +7,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.Random;
 import java.util.UUID;
 
 @BudgetConstraint
@@ -46,6 +47,18 @@ public class JobIn {
                 description,
                 budgetMin,
                 budgetMax
+        );
+    }
+
+    public static JobIn mock() {
+        int min = new Random().nextInt(1_000);
+        int max = min + new Random().nextInt(1_000);
+
+        return new JobIn(
+                UUID.randomUUID().toString(),
+                new Random().nextBoolean() ? UUID.randomUUID().toString() : null,
+                min,
+                max
         );
     }
 }
