@@ -52,7 +52,7 @@ public class JobEntity {
                 .jobId(UUID.randomUUID().toString())
                 .categoryId(UUID.randomUUID().toString())
                 .name(UUID.randomUUID().toString())
-                .description(new Random().nextBoolean() ? UUID.randomUUID().toString() : null)
+                .description(UUID.randomUUID().toString())
                 .budgetMin(min)
                 .budgetMax(max)
                 .build();
