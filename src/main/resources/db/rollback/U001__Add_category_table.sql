@@ -1,3 +1,3 @@
 DROP TABLE categories;
 
-DELETE FROM schema_version WHERE version = '001';
+DELETE FROM flyway_schema_history WHERE version = '001';

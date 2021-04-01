@@ -15,4 +15,4 @@ DELETE FROM categories WHERE category_id IN
 '8434d305-8082-40bf-a7db-f852383b1fdc'
 );
 
-DELETE FROM schema_version WHERE version = '003';
+DELETE FROM flyway_schema_history WHERE version = '003';

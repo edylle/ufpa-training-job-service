@@ -38,4 +38,4 @@ AND category_id IN
 '583937b3-d0d7-47dd-a306-69e9cb5c6bfe'
 );
 
-DELETE FROM schema_version WHERE version = '004';
+DELETE FROM flyway_schema_history WHERE version = '004';
