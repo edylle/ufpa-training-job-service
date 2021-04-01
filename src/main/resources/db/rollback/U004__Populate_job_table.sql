@@ -1,0 +1,41 @@
+DELETE FROM jobs WHERE job_id IN
+(
+'19c62491-7545-4993-8471-e74a282823af',
+'ea55daa8-7002-42c2-9d3d-bb8b060f136b',
+'0f9a5d49-843f-47df-85d0-0f88dd2fdeb4',
+'a7d6d902-3b07-4155-9253-c10d49633c28',
+'800e6b1e-fbfb-48a4-9057-e4a7b0ffdc7b',
+'ec978f18-41b9-40e4-9da1-76a163618686',
+'b28138bc-b4cc-4224-b27a-404286cad7ad',
+'edb1aba5-3eaa-4dec-8dfd-7ac56af85736',
+'92a356a9-f6ff-4c81-80b6-8de932331545',
+'875baf74-b7f3-4319-97c0-ede960a472ac',
+'3ed95d2d-41fd-455d-8d77-693cc5cee5a2',
+'7e081a58-4c88-4896-8a2b-eae19c03feb4',
+'67ca8919-6742-44eb-afe0-fecb75a8b4ce',
+'e9e80bb8-40f0-4797-8f89-5fd34cb8c437',
+'7a8bcb10-0503-4340-9cc9-6beabdc5c184',
+'4ca57a00-e281-47b5-b76a-dc40d6f16b4d',
+'c611c5ef-b3a1-47b2-9ee5-e13a3562890d',
+'2b137a1e-8667-4f97-b771-fb08f45e1459',
+'1a42bdb3-d72b-4e0e-82ba-e55cabea6a65',
+'91a134f2-570f-4477-befa-c856b3b74b05',
+'16a12fc0-e0d3-4c15-a55d-a6e3b17904af'
+);
+AND category_id IN
+(
+'8af68b30-5a3d-4635-af9a-e126a3fa3970',
+'a980eff5-18f5-4738-aa09-4351e355d0df',
+'f790b65e-b65f-4b2a-b979-a624a9287fbe',
+'e2c8a420-4f5f-41de-8884-7b6648fbb67f',
+'2f3714f3-6c28-438e-8286-d757b8cc6e3d',
+'ca845ff4-ed8d-4993-a9a5-4694fc6d1bf5',
+'4756d097-333f-4dc1-8c78-6b9b9fdbfc69',
+'cc225025-a2f9-41ae-917c-e8b6e82a4f15',
+'cfbafcad-a7c2-4a2f-8f1b-31df7b3d157e',
+'cc3a4a92-f885-474e-be50-16c33ad7d125',
+'420fb0a1-35e0-4703-8633-df1ffdee1030',
+'583937b3-d0d7-47dd-a306-69e9cb5c6bfe'
+);
+
+DELETE FROM schema_version WHERE version = '004';

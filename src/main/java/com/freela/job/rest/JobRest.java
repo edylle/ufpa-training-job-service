@@ -27,7 +27,7 @@ public class JobRest {
         return jobService.save(job, categoryId);
     }
 
-    @PutMapping("/update/{categoryId}/{jobIdd}")
+    @PutMapping("/update/{categoryId}/{jobId}")
     public JobOut update(@PathVariable String categoryId, @PathVariable String jobId, @Valid @RequestBody JobIn job) {
         return jobService.update(job, categoryId, jobId);
     }
